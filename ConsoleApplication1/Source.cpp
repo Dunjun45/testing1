@@ -96,7 +96,7 @@ bool readHigScoresFromFile(std::vector<highscore>& highscores, std::string input
 	unsigned long computedcrc = ComputeBlockCRC32(length - 4, reinterpret_cast<unsigned char*>(buffer));
 	std::cout << "CRC computed: " << computedcrc << std::endl;
 	int num_scores = (length - 4) / 20;
-	std::cout << "Num Scores: " << num_scores << std::endl;
+	std::cout << "Num Scores: cool " << num_scores << std::endl;
 	char* bufptr = buffer;
 	for (int i = 0; i < num_scores; i++) {
 		highscore h(bufptr);
